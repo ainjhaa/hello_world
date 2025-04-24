@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Showcase</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    height: 2000px; /* add scroll to observe fixed */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .product-card {
+    position: relative; /* for absolute child */
+    width: 300px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px #aaa;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sale-badge { 
+    /*position: absolute; top ; left ; backgrounnd-color ; 
+      border-radius: 5px ; color ; padding ; font-size ; font-weight ;*/
+    background-color: red;
+    color: white; 
+    padding: 5px 10px;
+    position: absolute;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    top: 5px;
+    left: 10px;
+
+  }
+  
+  .product-title {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-price {  
+    /*position: relative; left: 10px; color; 
+    font-weight; margin/top: font-size 18px;*/
+    position: relative;
+    left: 10px;
+    color: green;
+    font-weight: bold;
+    top: 5px;
+    font-size: 18px;
+}
+  
+  #chat-button {    
+    /*position: fixed; bottom; right; border-radius;
+      background-color ; text-decoration none;*/
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="sale-badge">SALE</div>
+        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Product Image">
+        <div class="product-title">Stylish Sneakers</div>
+        <div class="product-description">Comfortable and trendy sneakers perfect for daily wear.</div>
+        <div class="product-price">$49.99</div>
+      </div>
+      
+      <a href="#" id="chat-button">Chat With Us</a>
+</body>
+</html>
